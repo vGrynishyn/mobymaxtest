@@ -30,5 +30,4 @@ public class LoginAsATeacherOverlay{
         signInButton.click();
         return new TeacherHomePage();
     }
-
 }

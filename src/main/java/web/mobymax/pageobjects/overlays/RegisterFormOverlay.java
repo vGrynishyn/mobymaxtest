@@ -22,7 +22,7 @@ public class RegisterFormOverlay {
             passwordField = parent.$(".signup-input input.password "),
             registerButton = parent.$("#register-button");
 
-    ElementsCollection statesItems = $$(".state-item"),
+    private final ElementsCollection statesItems = $$(".state-item"),
             schoolItems = $$(".school-item");
 
     @Step("Set registration data for teacher: {teacherModel}")

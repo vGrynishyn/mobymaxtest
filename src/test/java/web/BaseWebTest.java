@@ -12,7 +12,6 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 import utils.TestListener;
 import web.mobymax.pageobjects.pages.homepage.HomePage;
-import java.time.LocalDateTime;
 
 @Log
 @Listeners(TestListener.class)
@@ -35,7 +34,6 @@ public class BaseWebTest {
 
     @AfterMethod(alwaysRun = true, description = "Close driver")
     protected void tearDown() {
-        System.out.println(LocalDateTime.now());
         DriverUtils.stop();
     }
 }

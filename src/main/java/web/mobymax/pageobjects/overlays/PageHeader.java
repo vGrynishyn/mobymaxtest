@@ -3,7 +3,6 @@ package web.mobymax.pageobjects.overlays;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import web.mobymax.pageobjects.pages.signinpage.SignInPage;
-
 import static com.codeborne.selenide.Selenide.$;
 
 public class PageHeader {
@@ -16,5 +15,4 @@ public class PageHeader {
         signInButton.click();
         return new SignInPage();
     }
-
 }
